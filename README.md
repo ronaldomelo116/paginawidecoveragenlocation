@@ -23,3 +23,5 @@ O maior desafio técnico resolvido neste projeto foi **inverter a ordem visual d
 
 - **HTML5:** Estruturação semântica.
 - **CSS3:** Estilização, Flexbox, Media Queries e reordenação de fluxo visual.
+
+Desenvolvido por **Ronaldo Melo** 🚀
