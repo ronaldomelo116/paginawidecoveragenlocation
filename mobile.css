@@ -1,0 +1,134 @@
+/* mobile.css */
+
+/* Aplica as regras apenas para telas de celulares e tablets */
+@media (max-width: 768px) {
+
+    /* ZERA MARGENS E PREENCHIMENTOS GERAIS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza todo o conteúdo horizontalmente */
+        width: 100%;
+    }
+
+    /* CONTAINER PRINCIPAL */
+    .container-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px; /* Margem interna nas laterais */
+    }
+
+    /* CABEÇALHO (Onde está o botão Sign Up) */
+    header {
+        width: 100%;
+        margin: 20px 0; /* Espaçamento superior e inferior */
+        display: flex;
+        justify-content: flex-end; /* Alinha o botão à direita, como na imagem */
+    }
+
+    /* Esconde os links de texto do menu no mobile para focar no botão (como na imagem) */
+    nav .links-header {
+        display: none;
+    }
+
+    .button-header {
+        position: static; /* Remove posicionamento absoluto anterior */
+        width: auto;
+        height: auto;
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        background-color: #6FBF44; /* Cor verde da imagem */
+        color: #FFFFFF;
+        border: none;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* CONTEÚDO PRINCIPAL (MAIN) */
+    main {
+        margin: 40px 0; /* Espaço acima e abaixo do conteúdo principal */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centraliza todo o texto */
+    }
+
+    /* IMAGEM/ILUSTRAÇÃO */
+    main img {
+        width: 100%;
+        max-width: 350px; /* Define um tamanho máximo para a ilustração */
+        height: auto;
+        order: 2; /* Coloca a imagem DEPOIS do texto (como na imagem de referência) */
+        margin-top: 40px;
+    }
+
+    /* SEÇÃO DE TEXTO */
+    section {
+        margin: 0;
+        order: 1; /* Coloca o texto ANTES da imagem */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* TÍTULO H1 */
+    h1 {
+        position: static;
+        width: 100%;
+        height: auto;
+        font-size: 32px; /* Tamanho ajustado para mobile */
+        color: #17233D; /* Cor escura da imagem */
+        line-height: 1.2;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    /* PARÁGRAFO */
+    p {
+        position: static;
+        width: 100%;
+        max-width: 450px; /* Limita a largura para melhor leitura */
+        height: auto;
+        font-size: 16px;
+        color: #555555; /* Cor cinza do texto */
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    /* LINK 'LEARN MORE' */
+    .link-main {
+        position: static;
+        font-size: 18px;
+        color: #6FBF44; /* Verde do link */
+        text-decoration: none;
+        font-weight: 500;
+        margin-bottom: 10px; /* Espaço antes da imagem que vem abaixo */
+    }
+
+    /* RODAPÉ */
+    footer {
+        width: 100%;
+        background-color: #6FBF44;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        margin-top: auto; /* Empurra o rodapé para o final da página */
+    }
+
+    footer a {
+        color: #FFFFFF;
+    }
+     b {
+        font-size: 15px;
+    }
+}
